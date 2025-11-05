@@ -40,8 +40,8 @@ In this section, applications like this are referred as *Java Main applications*
         > Manifest-Version: 1.0
         > Archiver-Version: Plexus Archiver
         > Built-By: p1234567
-        > Created-By: Apache Maven 3.3.3
-        > Build-Jdk: 1.8.0_45
+        > Created-By: Apache Maven 3.9.11
+        > Build-Jdk-Spec: 25
         > Main-Class: com.company.xs.java.main.Controller  
         > ```
 
@@ -112,6 +112,12 @@ In this section, applications like this are referred as *Java Main applications*
     >   memory: 128M
     >   path: ./target/java-main-sample.jar
     >   instances: 1
+    >   buildpacks
+    >   - sap_java_buildpack_jakarta
+    >   env:
+    >     JBP_CONFIG_COMPONENTS: "jres: ['com.sap.xs.java.buildpack.jre.SAPMachineJRE']"
+    >     JBP_CONFIG_SAP_MACHINE_JRE: '{ version: 25.+ }'
+    >     JBP_SKIP_PROVIDED_LIBRARY_COMPONENTS: "true"
     > ```
 
 3.  \(Optional\) If you use SAP HANA JDBC, we recommend that you include the dependent JAR files in the uber JAR. Then refer these files, as a space separated list, in the `Class-Path` header field of the MANIFEST.MF file. For example:

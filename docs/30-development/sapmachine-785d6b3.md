@@ -39,7 +39,7 @@ Without specifying a particular JRE version, your application will currently use
 
 -   For SAP Java Buildpack 2 – SapMachine JRE 17
 
-NOTE: The default major version of the SapMachine JRE will be raised from 17 to either 21 or 25. This only matters when the major version isn’t explicitly specified.
+*Note: The default SapMachine JRE version applies only when `JBP_CONFIG_SAP_MACHINE_JRE` for the JRE is not set. This default will soon change from 17 to 25.*
 
 To specify a particular JRE version, use environment variable JBP\_CONFIG\_SAP\_MACHINE\_JRE.
 

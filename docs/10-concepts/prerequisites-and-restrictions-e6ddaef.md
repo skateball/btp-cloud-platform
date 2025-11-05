@@ -19,8 +19,8 @@ Find a list of the product prerequisites and restrictions for SAP BTP.
 
 ## SAP BTP Tools
 
--   SAP BTP Tools for Java and SDK have been tested with Java 7, and Java 8.
--   SAP BTP Tools for Java and SDK run in many operating environments with Java 7, and Java 8 that are supported by Eclipse. However, SAP doesn’t systematically test all platforms.
+-   SAP BTP Tools for Java and SDK have been tested with Java 8.
+-   SAP BTP Tools for Java and SDK run in many operating environments with Java 8 that are supported by Eclipse. However, SAP doesn’t systematically test all platforms.
 -   SAP BTP Tools for Java must be installed on Eclipse IDE for Java EE developers.
 
 For the platform development tools, SDK, Cloud connector, and SAP JVM, see [https://tools.hana.ondemand.com/\#cloud](https://tools.hana.ondemand.com/#cloud).
