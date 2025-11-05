@@ -69,13 +69,6 @@ To change the default access log settings, follow the steps below.
 
     You can change the default format and have your access logs written differently. SAP Java Buildpack uses the *resource configuration* functionality to allow this. Changing the `pattern` attribute in the configuration file of Tomcat and TomEE is supported. The application has to provide the new value via the JBP\_CONFIG\_RESOURCE\_CONFIGURATION mechanism.
 
-    -   For SAP Java Buildpack 1:
-
-        ```
-        env:
-        JBP_CONFIG_RESOURCE_CONFIGURATION: "['tomcat/conf/logback-access-localhost.xml':{'logback.access.log.xs.pattern' : 'combined'}]"
-        ```
-
     -   For SAP Java Buildpack 2:
 
         ```

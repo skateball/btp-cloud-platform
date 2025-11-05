@@ -18,19 +18,6 @@ SAP Java Buildpack automatically sets the JVM option `"-XX:ActiveProcessorCount=
 
 If you want to explicitly set the value of `ActiveProcessorCount`, you can do that through the JBP\_CONFIG\_JAVA\_OPTS property in the application's *manifest.yml* file.
 
--   For SAP Java Buildpack 1:
-
-    ```
-    ---
-    applications:
-    - name: <APP_NAME>
-      buildpacks:
-      - sap_java_buildpack
-      env:
-        JBP_CONFIG_JAVA_OPTS: 'java_opts: ''-XX:ActiveProcessorCount=7'''
-      ...
-    ```
-
 -   For SAP Java Buildpack 2:
 
     ```
